@@ -53,6 +53,11 @@ public class Controller {
 	public String healthCheck(@PathVariable("test") String test) {
 		return test;
 	}
+	
+	@GetMapping("healthCheck2/{test2}")
+	public String healthCheck2(@PathVariable("test2") String test2) {
+		return test2;
+	}
 
 	@PostMapping("addNewDeviceData")
 	public ResponseEntity<ResponseWrapper> addNewDeviceData(@RequestBody AddDeviceTableData requestData) {
