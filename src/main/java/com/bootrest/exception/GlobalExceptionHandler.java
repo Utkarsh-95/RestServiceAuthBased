@@ -23,4 +23,8 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<>(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 }
+<<<<<<< HEAD
 //temp for new branch for main
+=======
+//temp for new branchddd
+>>>>>>> tryclean
