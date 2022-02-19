@@ -12,7 +12,7 @@ import org.springframework.web.context.request.WebRequest;
 public class GlobalExceptionHandler {
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<?> resourceNotFoundException(ResourceNotFoundException ex, WebRequest request) {
-		ErrorDetails errorDetails = new ErrorDetails(new Date(), "Record Not Found" + ex.getMessage(),
+		ErrorDetails errorDetails = new ErrorDetails(new Date(), "Record is Not Found" + ex.getMessage(),
 				request.getDescription(false));
 		return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
 	}
